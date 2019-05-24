@@ -18,7 +18,7 @@
 
 #define isInAnimation @1
 #define isNotInAnimation @0
-#define fpsEnabled false
+#define fpsEnabled true
 
 // weakify strongify
 #define weakify( x ) \

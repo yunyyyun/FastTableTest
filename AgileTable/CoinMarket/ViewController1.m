@@ -16,6 +16,7 @@
 @property(nonatomic, strong) CurrencyDataList* listData;
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
 @property(strong,nonatomic) ASTableNode* tableNode;
+@property (nonatomic, strong) NSTimer *timer;
 
 @end
 
@@ -41,6 +42,22 @@
     self.title = @"市值（Texture）";
     if (fpsEnabled)
         [self testFPSLabel];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self timerRequest];
+    [self.timer invalidate];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval: 5 target:self selector:@selector(timerRequest) userInfo:nil repeats:true];
+    [self.timer fire];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [self.timer invalidate];
+    self.timer = nil;
 }
 
 #pragma mark - FPS demo
@@ -162,6 +179,45 @@
     self.tableNode.delegate = nil;
     self.tableNode.dataSource = nil;
 }
+
+#pragma mark - Timer
+
+- (void)timerRequest
+{
+    [self timerRefresh];
+}
+
+- (void)timerRefresh
+{
+    [self requestData];
+//    if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) return;
+//    NSMutableArray *datas = [[NSMutableArray alloc] init];
+//    [datas addObjectsFromArray: [self visibleCurrencys]];
+//    NSLog(@"timerRefreshtimerRefresh %ld", datas.count);
+//    if (datas.count > 0) {
+//        [CurrencyDataList refresh:(NSArray<CurrencyData *> *) datas success:^(NSArray * _Nonnull responseList) {
+//            [self.tableNode reloadData];
+//        } failure:^(int code, NSString * _Nonnull error) {
+//
+//        }];
+//    } else {
+//        // [self requestData:1 toast:true];
+//    }
+}
+
+//- (NSArray *) visibleCurrencys{
+//    NSMutableArray *arr = [[NSMutableArray alloc] init];
+//
+//    for (UITableViewCell *c in [self.tableView visibleCells]){
+//        if ([c isKindOfClass: [CoinCell class]]){
+//            CoinCell *cc = (CoinCell *)c;
+//            CurrencyData *currency = cc.currency;
+//            [arr addObject: currency];
+//        }
+//    }
+//
+//    return [arr copy];
+//}
 
 /*
 #pragma mark - Navigation
