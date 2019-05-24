@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root Tab Bar View Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="kiM-mv-GHI">
             <objects>
-                <tabBarController storyboardIdentifier="InstallRootViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qmr-sP-DM7" customClass="RootTabBarViewController" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="InstallRootViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qmr-sP-DM7" customClass="MYTabBarViewController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="w5O-wE-ZQC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,6 +25,13 @@
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t90-av-31e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Hu-ey-6AX">
+                    <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </objects>
             <point key="canvasLocation" x="-218" y="43"/>
         </scene>

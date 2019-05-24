@@ -9,12 +9,9 @@
 #import "ViewController0.h"
 #import "CoinCell.h"
 
-#import "YYFPSLabel.h"
-
 @interface ViewController0 ()
 
 @property(nonatomic, strong) CurrencyDataList* listData;
-@property (nonatomic, strong) YYFPSLabel *fpsLabel;
 @property (nonatomic, strong) NSTimer *timer;
 
 @end
@@ -32,8 +29,8 @@
     
     self.title = @"市值（BaseVC）";
     
-    if (fpsEnabled)
-        [self testFPSLabel];
+//    if (fpsEnabled)
+//        [self testFPSLabel];
     
     @weakify(self);
     [self.tableView addRefreshTriggerBlock:^{
@@ -98,20 +95,6 @@
     [cellArray addObject: @[titleCellData]];
     
     return cellArray;
-}
-
-#pragma mark - FPS demo
-
-- (void)testFPSLabel {
-    _fpsLabel = [YYFPSLabel new];
-    _fpsLabel.frame = CGRectMake(200, 200, 50, 30);
-    [_fpsLabel sizeToFit];
-    [self.view addSubview:_fpsLabel];
-    
-    // 如果直接用 self 或者 weakSelf，都不能解决循环引用问题
-    
-    // 移除也不能使 label里的 timer invalidate
-    //        [_fpsLabel removeFromSuperview];
 }
 
 #pragma mark - Timer

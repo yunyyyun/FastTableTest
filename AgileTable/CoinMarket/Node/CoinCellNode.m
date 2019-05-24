@@ -31,6 +31,8 @@
         _logoImageNode = [[ASNetworkImageNode alloc] init];
         _logoImageNode.URL = [NSURL URLWithString: data.logo];
         [self addSubnode: _logoImageNode];
+        _logoImageNode.placeholderFadeDuration = 3;
+        // _logoImageNode.placeholderColor = [UIColor clearColor];
         
         _rankNode = [[ASTextNode alloc] init];
         _rankNode.attributedText = [[NSAttributedString alloc] initWithString: [NSString stringWithFormat: @"%@", data.rank]];

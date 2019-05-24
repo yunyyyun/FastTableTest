@@ -7,14 +7,11 @@
 //
 
 #import "ViewController1.h"
-
 #import "CoinCellNode.h"
-#import "YYFPSLabel.h"
 
 @interface ViewController1 ()<ASTableDataSource, ASTableDelegate>
 
 @property(nonatomic, strong) CurrencyDataList* listData;
-@property (nonatomic, strong) YYFPSLabel *fpsLabel;
 @property(strong,nonatomic) ASTableNode* tableNode;
 @property (nonatomic, strong) NSTimer *timer;
 
@@ -27,21 +24,15 @@
     // Do any additional setup after loading the view.
     
     _tableNode = [[ASTableNode alloc]initWithStyle:UITableViewStylePlain];
-    // 2
     self.tableNode.dataSource = self;
     self.tableNode.delegate = self;
-    // 3
     self.tableNode.view.separatorStyle = UITableViewCellSeparatorStyleNone;
-    // 4
     // self.tableNode.view.leadingScreensForBatching = 1.0;
-    // 5
     [self.view addSubnode:self.tableNode];
     
     [self requestData];
     
     self.title = @"市值（Texture）";
-    if (fpsEnabled)
-        [self testFPSLabel];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -58,20 +49,6 @@
     [super viewDidDisappear:animated];
     [self.timer invalidate];
     self.timer = nil;
-}
-
-#pragma mark - FPS demo
-
-- (void)testFPSLabel {
-    _fpsLabel = [YYFPSLabel new];
-    _fpsLabel.frame = CGRectMake(200, 200, 50, 30);
-    [_fpsLabel sizeToFit];
-    [self.view addSubview:_fpsLabel];
-    
-    // 如果直接用 self 或者 weakSelf，都不能解决循环引用问题
-    
-    // 移除也不能使 label里的 timer invalidate
-    //        [_fpsLabel removeFromSuperview];
 }
 
 - (void) requestData{
@@ -107,6 +84,7 @@
     // 3
     ASCellNode *(^ASCellNodeBlock)(void) = ^ASCellNode *() {
         CoinCellNode *cellNode = [[CoinCellNode alloc] initWithCurrencyData: data];
+        // cellNode.b
         return cellNode;
     };
     
@@ -189,6 +167,7 @@
 
 - (void)timerRefresh
 {
+    // [self.tableNode reloadData];
     [self requestData];
 //    if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) return;
 //    NSMutableArray *datas = [[NSMutableArray alloc] init];

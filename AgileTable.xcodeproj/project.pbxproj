@@ -29,6 +29,7 @@
 		BB9CBC3B2297C83E00251B7C /* UITableView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC392297C83E00251B7C /* UITableView+Refresh.m */; };
 		BB9CBC3E2297C8A100251B7C /* NSObject+KVOBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC3D2297C8A100251B7C /* NSObject+KVOBlock.m */; };
 		BB9CBC402297CC7300251B7C /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC3F2297CC7300251B7C /* Config.m */; };
+		BB9CBC482297F68200251B7C /* MYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC472297F68200251B7C /* MYTabBarViewController.m */; };
 		E164C6AB394A785C54994351 /* libPods-AgileTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9374E60AB2011B8CC5E924CA /* libPods-AgileTable.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,8 @@
 		BB9CBC3F2297CC7300251B7C /* Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		BB9CBC412297CC8600251B7C /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		BB9CBC422297E01E00251B7C /* BBQ-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BBQ-prefix.pch"; sourceTree = "<group>"; };
+		BB9CBC462297F68200251B7C /* MYTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTabBarViewController.h; sourceTree = "<group>"; };
+		BB9CBC472297F68200251B7C /* MYTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,11 +157,13 @@
 		BB09FCA2228E8D1D00E3B37B /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
-				BB9CBC382297C82300251B7C /* Refresh */,
+				BB9CBC382297C82300251B7C /* Category */,
 				BB09FCAE228E93C900E3B37B /* CellDataModel */,
 				BB09FCA3228E8D3000E3B37B /* Cell */,
 				BB09FCAB228E928700E3B37B /* BaseViewController.h */,
 				BB09FCAC228E928700E3B37B /* BaseViewController.m */,
+				BB9CBC462297F68200251B7C /* MYTabBarViewController.h */,
+				BB9CBC472297F68200251B7C /* MYTabBarViewController.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -225,7 +230,7 @@
 			path = Node;
 			sourceTree = "<group>";
 		};
-		BB9CBC382297C82300251B7C /* Refresh */ = {
+		BB9CBC382297C82300251B7C /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				BB9CBC3C2297C8A100251B7C /* NSObject+KVOBlock.h */,
@@ -233,7 +238,7 @@
 				BB9CBC3A2297C83E00251B7C /* UITableView+Refresh.h */,
 				BB9CBC392297C83E00251B7C /* UITableView+Refresh.m */,
 			);
-			path = Refresh;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		F370AF9D05BBEB0BEAC80EBF /* Pods */ = {
@@ -345,6 +350,7 @@
 			files = (
 				BB09FCAA228E8E8200E3B37B /* BaseTableViewCell.m in Sources */,
 				BB09FCAD228E928700E3B37B /* BaseViewController.m in Sources */,
+				BB9CBC482297F68200251B7C /* MYTabBarViewController.m in Sources */,
 				BB9CBC342296C0D800251B7C /* CoinCellNode.m in Sources */,
 				BB09FC91228E8CC600E3B37B /* ViewController0.m in Sources */,
 				BB09FC9C228E8CC800E3B37B /* main.m in Sources */,
