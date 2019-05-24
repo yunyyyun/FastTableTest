@@ -82,7 +82,7 @@
         self.goingStatusImageView.image = changeUpImage;
         self.goingStatusImageView.hidden = false;
     }
-    if ([self.currency.lastChange doubleValue] <= -minVailedPrice){
+    else if ([self.currency.lastChange doubleValue] <= -minVailedPrice){
         self.priceLabel.textColor = changeDownColor;
         self.goingStatusImageView.image = changeDownImage;
         self.goingStatusImageView.hidden = false;
