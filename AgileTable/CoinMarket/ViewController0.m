@@ -85,9 +85,6 @@
 {
     NSMutableArray *cellArray = [NSMutableArray array];
     
-//    CellDataModel *titleCellData = [[CellDataModel alloc] initWithCellClassName: @"TitleCell" data: @"市值" bottomLineLeft: @(0) bottomLineRight: @(0) height: @(44)];
-//    [cellArray addObject: @[titleCellData]];
-    
     NSMutableArray<CellDataModel *> *section1 = [NSMutableArray array];
     [cellArray addObject:section1];
     [self.listData.list enumerateObjectsUsingBlock:^(CurrencyData *obj, NSUInteger idx, BOOL * _Nonnull stop) {

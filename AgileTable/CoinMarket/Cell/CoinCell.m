@@ -46,7 +46,7 @@
     self.rankLabel.text = [NSString stringWithFormat: @"%@", data.rank];
     self.symbolLabel.text = data.symbol;
     self.marketCapLabel.text = [NSString stringWithFormat: @"市值 ¥%@", data.marketCapCnyDisplay];
-    self.priceLabel.text = data.priceUsdDisplay;
+    self.priceLabel.text = [NSString stringWithFormat: @"$%@", data.priceUsdDisplay];
     self.convertPriceLabel.text = [NSString stringWithFormat: @"≈¥%@", data.priceCnyDisplay];
     
     double percentChange24h = [data.percentChange24h doubleValue];

@@ -49,7 +49,7 @@
         [self addSubnode: _marketCapNode];
         
         _priceNode = [[ASTextNode alloc] init];
-        _priceNode.attributedText = [[NSAttributedString alloc]initWithString: data.priceUsdDisplay attributes:@{NSForegroundColorAttributeName: [UIColor blackColor],NSFontAttributeName: [UIFont systemFontOfSize:17 weight: UIFontWeightSemibold]}];
+        _priceNode.attributedText = [[NSAttributedString alloc]initWithString: [NSString stringWithFormat: @"$%@", data.priceUsdDisplay] attributes:@{NSForegroundColorAttributeName: [UIColor blackColor],NSFontAttributeName: [UIFont systemFontOfSize:17 weight: UIFontWeightSemibold]}];
         [self addSubnode: _priceNode];
         
         _convertPriceNode = [[ASTextNode alloc] init];
