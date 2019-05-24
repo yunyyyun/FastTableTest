@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51829F92229068E200F80D9A /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51829F90229068E200F80D9A /* TitleCell.m */; };
+		51829F93229068E200F80D9A /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51829F91229068E200F80D9A /* TitleCell.xib */; };
+		BB09FC8E228E8CC600E3B37B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FC8D228E8CC600E3B37B /* AppDelegate.m */; };
+		BB09FC91228E8CC600E3B37B /* ViewController0.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FC90228E8CC600E3B37B /* ViewController0.m */; };
+		BB09FC94228E8CC600E3B37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB09FC92228E8CC600E3B37B /* Main.storyboard */; };
+		BB09FC96228E8CC800E3B37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB09FC95228E8CC800E3B37B /* Assets.xcassets */; };
+		BB09FC99228E8CC800E3B37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB09FC97228E8CC800E3B37B /* LaunchScreen.storyboard */; };
+		BB09FC9C228E8CC800E3B37B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FC9B228E8CC800E3B37B /* main.m */; };
+		BB09FCA6228E8D7400E3B37B /* BaseSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FCA5228E8D7400E3B37B /* BaseSelectCell.m */; };
+		BB09FCAA228E8E8200E3B37B /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FCA9228E8E8200E3B37B /* BaseTableViewCell.m */; };
+		BB09FCAD228E928700E3B37B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FCAC228E928700E3B37B /* BaseViewController.m */; };
+		BB09FCB1228E93FD00E3B37B /* CellDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FCB0228E93FD00E3B37B /* CellDataModel.m */; };
+		BB09FCB5228EBF7E00E3B37B /* CoinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FCB3228EBF7E00E3B37B /* CoinCell.m */; };
+		BB09FCB6228EBF7E00E3B37B /* CoinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB09FCB4228EBF7E00E3B37B /* CoinCell.xib */; };
+		BB9CBB2F2292C7A100251B7C /* CurrencyData.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBB2E2292C7A100251B7C /* CurrencyData.m */; };
+		BB9CBC262296BA6900251B7C /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC252296BA6900251B7C /* ViewController1.m */; };
+		BB9CBC2C2296BB4C00251B7C /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC282296BB4C00251B7C /* YYWeakProxy.m */; };
+		BB9CBC2D2296BB4C00251B7C /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC2A2296BB4C00251B7C /* YYFPSLabel.m */; };
+		BB9CBC342296C0D800251B7C /* CoinCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC332296C0D800251B7C /* CoinCellNode.m */; };
+		E164C6AB394A785C54994351 /* libPods-AgileTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9374E60AB2011B8CC5E924CA /* libPods-AgileTable.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		51829F8F229068E200F80D9A /* TitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
+		51829F90229068E200F80D9A /* TitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
+		51829F91229068E200F80D9A /* TitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
+		6E5520D69D07D68CBA70C234 /* Pods-AgileTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileTable.release.xcconfig"; path = "Target Support Files/Pods-AgileTable/Pods-AgileTable.release.xcconfig"; sourceTree = "<group>"; };
+		6F4DB6534D2DE58854FA1363 /* Pods-AgileTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileTable.debug.xcconfig"; path = "Target Support Files/Pods-AgileTable/Pods-AgileTable.debug.xcconfig"; sourceTree = "<group>"; };
+		9374E60AB2011B8CC5E924CA /* libPods-AgileTable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AgileTable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB09FC89228E8CC600E3B37B /* AgileTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB09FC8C228E8CC600E3B37B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB09FC8D228E8CC600E3B37B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB09FC8F228E8CC600E3B37B /* ViewController0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController0.h; sourceTree = "<group>"; };
+		BB09FC90228E8CC600E3B37B /* ViewController0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController0.m; sourceTree = "<group>"; };
+		BB09FC93228E8CC600E3B37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB09FC95228E8CC800E3B37B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB09FC98228E8CC800E3B37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB09FC9A228E8CC800E3B37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB09FC9B228E8CC800E3B37B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB09FCA4228E8D7400E3B37B /* BaseSelectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseSelectCell.h; sourceTree = "<group>"; };
+		BB09FCA5228E8D7400E3B37B /* BaseSelectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSelectCell.m; sourceTree = "<group>"; };
+		BB09FCA8228E8E8200E3B37B /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		BB09FCA9228E8E8200E3B37B /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		BB09FCAB228E928700E3B37B /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		BB09FCAC228E928700E3B37B /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		BB09FCAF228E93FD00E3B37B /* CellDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellDataModel.h; sourceTree = "<group>"; };
+		BB09FCB0228E93FD00E3B37B /* CellDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellDataModel.m; sourceTree = "<group>"; };
+		BB09FCB2228EBF7E00E3B37B /* CoinCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinCell.h; sourceTree = "<group>"; };
+		BB09FCB3228EBF7E00E3B37B /* CoinCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinCell.m; sourceTree = "<group>"; };
+		BB09FCB4228EBF7E00E3B37B /* CoinCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinCell.xib; sourceTree = "<group>"; };
+		BB9CBB2D2292C7A100251B7C /* CurrencyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyData.h; sourceTree = "<group>"; };
+		BB9CBB2E2292C7A100251B7C /* CurrencyData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyData.m; sourceTree = "<group>"; };
+		BB9CBC242296BA6900251B7C /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		BB9CBC252296BA6900251B7C /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		BB9CBC282296BB4C00251B7C /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		BB9CBC292296BB4C00251B7C /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		BB9CBC2A2296BB4C00251B7C /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		BB9CBC2B2296BB4C00251B7C /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		BB9CBC322296C0D800251B7C /* CoinCellNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinCellNode.h; sourceTree = "<group>"; };
+		BB9CBC332296C0D800251B7C /* CoinCellNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinCellNode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB09FC86228E8CC600E3B37B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E164C6AB394A785C54994351 /* libPods-AgileTable.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51829F8E229068AA00F80D9A /* CoinMarket */ = {
+			isa = PBXGroup;
+			children = (
+				BB9CBC2E2296BE7700251B7C /* Node */,
+				BB9CBB2C2292C71100251B7C /* Data */,
+				BB9CBB2B2292C6ED00251B7C /* Cell */,
+				BB09FC8F228E8CC600E3B37B /* ViewController0.h */,
+				BB09FC90228E8CC600E3B37B /* ViewController0.m */,
+				BB9CBC242296BA6900251B7C /* ViewController1.h */,
+				BB9CBC252296BA6900251B7C /* ViewController1.m */,
+			);
+			path = CoinMarket;
+			sourceTree = "<group>";
+		};
+		8751C503D8CD3AB3D47F6834 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9374E60AB2011B8CC5E924CA /* libPods-AgileTable.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB09FC80228E8CC600E3B37B = {
+			isa = PBXGroup;
+			children = (
+				BB09FC8B228E8CC600E3B37B /* AgileTable */,
+				BB09FC8A228E8CC600E3B37B /* Products */,
+				F370AF9D05BBEB0BEAC80EBF /* Pods */,
+				8751C503D8CD3AB3D47F6834 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB09FC8A228E8CC600E3B37B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB09FC89228E8CC600E3B37B /* AgileTable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB09FC8B228E8CC600E3B37B /* AgileTable */ = {
+			isa = PBXGroup;
+			children = (
+				BB9CBC272296BB4C00251B7C /* YYFPSLabel */,
+				BB09FCA2228E8D1D00E3B37B /* BaseVC */,
+				51829F8E229068AA00F80D9A /* CoinMarket */,
+				BB09FC8C228E8CC600E3B37B /* AppDelegate.h */,
+				BB09FC8D228E8CC600E3B37B /* AppDelegate.m */,
+				BB09FC92228E8CC600E3B37B /* Main.storyboard */,
+				BB09FC95228E8CC800E3B37B /* Assets.xcassets */,
+				BB09FC97228E8CC800E3B37B /* LaunchScreen.storyboard */,
+				BB09FC9A228E8CC800E3B37B /* Info.plist */,
+				BB09FC9B228E8CC800E3B37B /* main.m */,
+			);
+			path = AgileTable;
+			sourceTree = "<group>";
+		};
+		BB09FCA2228E8D1D00E3B37B /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				BB09FCAE228E93C900E3B37B /* CellDataModel */,
+				BB09FCA3228E8D3000E3B37B /* Cell */,
+				BB09FCAB228E928700E3B37B /* BaseViewController.h */,
+				BB09FCAC228E928700E3B37B /* BaseViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		BB09FCA3228E8D3000E3B37B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BB09FCA4228E8D7400E3B37B /* BaseSelectCell.h */,
+				BB09FCA5228E8D7400E3B37B /* BaseSelectCell.m */,
+				BB09FCA8228E8E8200E3B37B /* BaseTableViewCell.h */,
+				BB09FCA9228E8E8200E3B37B /* BaseTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BB09FCAE228E93C900E3B37B /* CellDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB09FCAF228E93FD00E3B37B /* CellDataModel.h */,
+				BB09FCB0228E93FD00E3B37B /* CellDataModel.m */,
+			);
+			path = CellDataModel;
+			sourceTree = "<group>";
+		};
+		BB9CBB2B2292C6ED00251B7C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				51829F8F229068E200F80D9A /* TitleCell.h */,
+				51829F90229068E200F80D9A /* TitleCell.m */,
+				51829F91229068E200F80D9A /* TitleCell.xib */,
+				BB09FCB2228EBF7E00E3B37B /* CoinCell.h */,
+				BB09FCB3228EBF7E00E3B37B /* CoinCell.m */,
+				BB09FCB4228EBF7E00E3B37B /* CoinCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BB9CBB2C2292C71100251B7C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BB9CBB2D2292C7A100251B7C /* CurrencyData.h */,
+				BB9CBB2E2292C7A100251B7C /* CurrencyData.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BB9CBC272296BB4C00251B7C /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				BB9CBC282296BB4C00251B7C /* YYWeakProxy.m */,
+				BB9CBC292296BB4C00251B7C /* YYFPSLabel.h */,
+				BB9CBC2A2296BB4C00251B7C /* YYFPSLabel.m */,
+				BB9CBC2B2296BB4C00251B7C /* YYWeakProxy.h */,
+			);
+			path = YYFPSLabel;
+			sourceTree = "<group>";
+		};
+		BB9CBC2E2296BE7700251B7C /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				BB9CBC322296C0D800251B7C /* CoinCellNode.h */,
+				BB9CBC332296C0D800251B7C /* CoinCellNode.m */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		F370AF9D05BBEB0BEAC80EBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F4DB6534D2DE58854FA1363 /* Pods-AgileTable.debug.xcconfig */,
+				6E5520D69D07D68CBA70C234 /* Pods-AgileTable.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB09FC88228E8CC600E3B37B /* AgileTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB09FC9F228E8CC800E3B37B /* Build configuration list for PBXNativeTarget "AgileTable" */;
+			buildPhases = (
+				BF0D0B75438F90B9914A7EA7 /* [CP] Check Pods Manifest.lock */,
+				BB09FC85228E8CC600E3B37B /* Sources */,
+				BB09FC86228E8CC600E3B37B /* Frameworks */,
+				BB09FC87228E8CC600E3B37B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgileTable;
+			productName = AgileTable;
+			productReference = BB09FC89228E8CC600E3B37B /* AgileTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB09FC81228E8CC600E3B37B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = mengyun;
+				TargetAttributes = {
+					BB09FC88228E8CC600E3B37B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = BB09FC84228E8CC600E3B37B /* Build configuration list for PBXProject "AgileTable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB09FC80228E8CC600E3B37B;
+			productRefGroup = BB09FC8A228E8CC600E3B37B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB09FC88228E8CC600E3B37B /* AgileTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB09FC87228E8CC600E3B37B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB09FC99228E8CC800E3B37B /* LaunchScreen.storyboard in Resources */,
+				BB09FCB6228EBF7E00E3B37B /* CoinCell.xib in Resources */,
+				BB09FC96228E8CC800E3B37B /* Assets.xcassets in Resources */,
+				BB09FC94228E8CC600E3B37B /* Main.storyboard in Resources */,
+				51829F93229068E200F80D9A /* TitleCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF0D0B75438F90B9914A7EA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgileTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB09FC85228E8CC600E3B37B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB09FCAA228E8E8200E3B37B /* BaseTableViewCell.m in Sources */,
+				BB09FCAD228E928700E3B37B /* BaseViewController.m in Sources */,
+				BB9CBC342296C0D800251B7C /* CoinCellNode.m in Sources */,
+				BB09FC91228E8CC600E3B37B /* ViewController0.m in Sources */,
+				BB09FC9C228E8CC800E3B37B /* main.m in Sources */,
+				BB09FCB1228E93FD00E3B37B /* CellDataModel.m in Sources */,
+				BB09FCB5228EBF7E00E3B37B /* CoinCell.m in Sources */,
+				BB9CBB2F2292C7A100251B7C /* CurrencyData.m in Sources */,
+				BB9CBC262296BA6900251B7C /* ViewController1.m in Sources */,
+				BB9CBC2C2296BB4C00251B7C /* YYWeakProxy.m in Sources */,
+				BB9CBC2D2296BB4C00251B7C /* YYFPSLabel.m in Sources */,
+				BB09FCA6228E8D7400E3B37B /* BaseSelectCell.m in Sources */,
+				51829F92229068E200F80D9A /* TitleCell.m in Sources */,
+				BB09FC8E228E8CC600E3B37B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB09FC92228E8CC600E3B37B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB09FC93228E8CC600E3B37B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB09FC97228E8CC800E3B37B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB09FC98228E8CC800E3B37B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB09FC9D228E8CC800E3B37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB09FC9E228E8CC800E3B37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB09FCA0228E8CC800E3B37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F4DB6534D2DE58854FA1363 /* Pods-AgileTable.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TS559DR96;
+				INFOPLIST_FILE = AgileTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foo.AgileTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB09FCA1228E8CC800E3B37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E5520D69D07D68CBA70C234 /* Pods-AgileTable.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TS559DR96;
+				INFOPLIST_FILE = AgileTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foo.AgileTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB09FC84228E8CC600E3B37B /* Build configuration list for PBXProject "AgileTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB09FC9D228E8CC800E3B37B /* Debug */,
+				BB09FC9E228E8CC800E3B37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB09FC9F228E8CC800E3B37B /* Build configuration list for PBXNativeTarget "AgileTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB09FCA0228E8CC800E3B37B /* Debug */,
+				BB09FCA1228E8CC800E3B37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB09FC81228E8CC600E3B37B /* Project object */;
+}
