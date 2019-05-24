@@ -19,7 +19,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *priceLabel;
 @property (strong, nonatomic) IBOutlet UILabel *convertPriceLabel;
 @property (strong, nonatomic) IBOutlet UIButton *changePercentButton;
-
+@property (strong, nonatomic) IBOutlet UIImageView *goingStatusImageView;
 
 @end
 
@@ -36,7 +36,7 @@
       viewController:(UIViewController *)viewController
            tableView:(UITableView *)tableView{
     [super setDataModel: data viewController: viewController tableView: tableView];
-    
+    self.currency = data;
     NSURL *url = [NSURL URLWithString: data.logo];
     if (url){
         [self.logoImageView sd_setImageWithURL:url ];
@@ -56,10 +56,40 @@
     }
     [self.changePercentButton setTitle: percentChange24hStr forState: UIControlStateNormal];
     if (percentChange24h>=0){
-        self.changePercentButton.backgroundColor = [UIColor colorWithRed: 235/255.0 green: 47/255.0 blue: 47/255.0 alpha: 0.9];
+        self.changePercentButton.backgroundColor = changeUpColor;
     }
     else{
-        self.changePercentButton.backgroundColor = [UIColor colorWithRed: 0/255.0 green: 167/255.0 blue: 50/255.0 alpha: 0.9];
+        self.changePercentButton.backgroundColor = changeDownColor;
+    }
+    
+    //价格变动动画
+    [self updatePriceStatus];
+    if (![data.isAnimated isEqualToNumber: isInAnimation]) {
+        NSTimeInterval duration = 2;
+        [data animation:duration];
+        @weakify(self);
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((duration + 0.02) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            @strongify(self);
+            [self updatePriceStatus];
+        });
+    }
+}
+
+- (void)updatePriceStatus
+{
+    if ([self.currency.lastChange doubleValue] >=  minVailedPrice){
+        self.priceLabel.textColor = changeUpColor;
+        self.goingStatusImageView.image = changeUpImage;
+        self.goingStatusImageView.hidden = false;
+    }
+    if ([self.currency.lastChange doubleValue] <= -minVailedPrice){
+        self.priceLabel.textColor = changeDownColor;
+        self.goingStatusImageView.image = changeDownImage;
+        self.goingStatusImageView.hidden = false;
+    }
+    else{
+        self.priceLabel.textColor = [UIColor darkTextColor];
+        self.goingStatusImageView.hidden = true;
     }
 }
 

@@ -8,11 +8,12 @@
 
 #import <JSONModel.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
 @protocol CurrencyData;
 @interface CurrencyData : JSONModel
 
+@property (nonatomic) NSNumber<Optional> *sourceType;
+@property (nonatomic) NSNumber<Optional> *dataId;
 @property (nonatomic) NSString<Optional> *logo;
 @property (nonatomic) NSString<Optional> *symbol;
 @property (nonatomic) NSString<Optional> *alias;
@@ -21,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSString<Optional> *priceUsdDisplay;
 @property (nonatomic) NSString<Optional> *priceCnyDisplay;
 @property (nonatomic) NSNumber<Optional> *percentChange24h;
+@property (nonatomic) NSNumber<Optional> *lastChange;  // 判断刷新的涨跌
+@property (nonatomic) NSNumber<Optional> *isAnimated;
+- (void)animation:(NSTimeInterval)duration;
 
 @end
 
@@ -29,7 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSArray<CurrencyData, Optional> *list;
 
 + (NSURLSessionDataTask *)getDatasSuccess:(void (^)(CurrencyDataList* data))success failure:(void (^)(int code, NSString *error))failure;
++ (NSURLSessionDataTask *)refresh:(NSArray<CurrencyData *> *)currencies success:(void (^)(NSArray *responseList))success failure:(void (^)(int code, NSString *error))failure;
 
 @end
-
-NS_ASSUME_NONNULL_END

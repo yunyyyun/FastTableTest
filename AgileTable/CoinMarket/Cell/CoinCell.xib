@@ -37,7 +37,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$7360.43" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-if-Sjo">
-                        <rect key="frame" x="264" y="15" width="79" height="20.5"/>
+                        <rect key="frame" x="258" y="15" width="79" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -64,7 +64,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~50183.44" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyd-RG-Edq">
-                        <rect key="frame" x="281" y="44" width="62" height="14.5"/>
+                        <rect key="frame" x="275" y="44" width="62" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -81,14 +81,23 @@
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mit-dx-R2M">
+                        <rect key="frame" x="342" y="35.5" width="5" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="HgW-vv-Cjh"/>
+                            <constraint firstAttribute="height" constant="7" id="iti-ew-zjD"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="o0t-TP-M4y" firstAttribute="leading" secondItem="SdX-if-Sjo" secondAttribute="trailing" constant="8" id="BQ8-c6-Ug4"/>
+                    <constraint firstItem="mit-dx-R2M" firstAttribute="centerY" secondItem="o0t-TP-M4y" secondAttribute="centerY" id="6Rh-OT-ERL"/>
+                    <constraint firstItem="o0t-TP-M4y" firstAttribute="leading" secondItem="SdX-if-Sjo" secondAttribute="trailing" constant="14" id="BQ8-c6-Ug4"/>
                     <constraint firstItem="SdX-if-Sjo" firstAttribute="centerY" secondItem="X3s-oQ-uVw" secondAttribute="centerY" id="E1W-hg-i0z"/>
                     <constraint firstItem="Hyd-RG-Edq" firstAttribute="height" secondItem="qT2-Rh-rMg" secondAttribute="height" id="Esl-Au-T3e"/>
                     <constraint firstItem="qT2-Rh-rMg" firstAttribute="top" secondItem="X3s-oQ-uVw" secondAttribute="bottom" constant="4" id="KmH-Gz-zcF"/>
                     <constraint firstItem="XN3-x6-HX1" firstAttribute="centerY" secondItem="qT2-Rh-rMg" secondAttribute="centerY" id="KyK-nk-VDq"/>
+                    <constraint firstItem="o0t-TP-M4y" firstAttribute="leading" secondItem="mit-dx-R2M" secondAttribute="trailing" constant="4" id="Q9v-B9-nOR"/>
                     <constraint firstItem="XN3-x6-HX1" firstAttribute="leading" secondItem="CRq-r6-KTA" secondAttribute="leading" id="Qm6-dU-QRg"/>
                     <constraint firstAttribute="trailing" secondItem="o0t-TP-M4y" secondAttribute="trailing" constant="15" id="Rl7-4P-lcx"/>
                     <constraint firstItem="Cni-KW-OgG" firstAttribute="bottom" secondItem="CRq-r6-KTA" secondAttribute="bottom" id="Rro-Vq-grv"/>
@@ -110,6 +119,7 @@
             <connections>
                 <outlet property="changePercentButton" destination="o0t-TP-M4y" id="odf-Vc-7lA"/>
                 <outlet property="convertPriceLabel" destination="Hyd-RG-Edq" id="Amc-fx-jnR"/>
+                <outlet property="goingStatusImageView" destination="mit-dx-R2M" id="TLU-pb-moP"/>
                 <outlet property="logoImageView" destination="X3s-oQ-uVw" id="V14-C5-q5z"/>
                 <outlet property="marketCapLabel" destination="XN3-x6-HX1" id="2XU-sc-Y4P"/>
                 <outlet property="nameLabel" destination="Cni-KW-OgG" id="S2C-bi-soi"/>

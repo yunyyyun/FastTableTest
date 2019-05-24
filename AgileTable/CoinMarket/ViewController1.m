@@ -39,7 +39,8 @@
     [self requestData];
     
     self.title = @"市值（Texture）";
-    [self testFPSLabel];
+    if (fpsEnabled)
+        [self testFPSLabel];
 }
 
 #pragma mark - FPS demo
