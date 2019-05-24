@@ -15,7 +15,7 @@
 
 @property(nonatomic, strong) CurrencyDataList* listData;
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
-@property(strong,nonatomic)ASTableNode* tableNode;
+@property(strong,nonatomic) ASTableNode* tableNode;
 
 @end
 
