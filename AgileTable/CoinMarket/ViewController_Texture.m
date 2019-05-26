@@ -169,21 +169,19 @@
 
 - (void)timerRefresh
 {
-    // [self.tableNode reloadData];
-    [self requestData];
-//    if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) return;
-//    NSMutableArray *datas = [[NSMutableArray alloc] init];
-//    [datas addObjectsFromArray: [self visibleCurrencys]];
-//    NSLog(@"timerRefreshtimerRefresh %ld", datas.count);
-//    if (datas.count > 0) {
-//        [CurrencyDataList refresh:(NSArray<CurrencyData *> *) datas success:^(NSArray * _Nonnull responseList) {
-//            [self.tableNode reloadData];
-//        } failure:^(int code, NSString * _Nonnull error) {
-//
-//        }];
-//    } else {
-//        // [self requestData:1 toast:true];
-//    }
+    if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) return;
+    NSMutableArray *datas = [[NSMutableArray alloc] init];
+    [datas addObjectsFromArray: self.listData.list];
+    NSLog(@"timerRefreshtimerRefresh %ld", datas.count);
+    if (datas.count > 0) {
+        [CurrencyDataList refresh:(NSArray<CurrencyData *> *) datas success:^(NSArray * _Nonnull responseList) {
+            [self.tableNode reloadData];
+        } failure:^(int code, NSString * _Nonnull error) {
+
+        }];
+    } else {
+        // [self requestData:1 toast:true];
+    }
 }
 
 //- (NSArray *) visibleCurrencys{

@@ -16,6 +16,7 @@
     
     ASTextNode *_priceNode;
     ASTextNode *_convertPriceNode;
+    ASImageNode *_goingStatusImageNode;
     ASButtonNode *_changePercentNode;
     
     ASDisplayNode *_lineNode;
@@ -24,7 +25,8 @@
 
 - (instancetype)initWithCurrencyData:(CurrencyData *)data{
     self = [super init];
-    
+    static int count = 0;
+    NSLog(@"initWithCurrencyData Count: %d ", count++);
     if (self){
         _data = data;
         
@@ -61,6 +63,10 @@
         _convertPriceNode.attributedText = [[NSAttributedString alloc]initWithString: [NSString stringWithFormat: @"≈¥%@", data.priceCnyDisplay] attributes:@{NSForegroundColorAttributeName: [UIColor lightGrayColor],NSFontAttributeName: [UIFont systemFontOfSize:12 weight: UIFontWeightRegular]}];
         [self addSubnode: _convertPriceNode];
         
+        _goingStatusImageNode = [[ASImageNode alloc] init];
+        _goingStatusImageNode.image = changeUpImage;
+        [self addSubnode: _goingStatusImageNode];
+        
         _changePercentNode = [[ASButtonNode alloc] init];
         double percentChange24h = [data.percentChange24h doubleValue];
         NSString *percentChange24hStr = [NSString stringWithFormat: @"%.2f%%", percentChange24h*100];
@@ -83,7 +89,37 @@
         [self addSubnode: _lineNode];
     }
     
+    //价格变动动画
+    [self updatePriceStatus];
+    if (![data.isAnimated isEqualToNumber: isInAnimation]) {
+        NSTimeInterval duration = 2;
+        [data animation:duration];
+        @weakify(self);
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((duration + 0.02) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            @strongify(self);
+            [self updatePriceStatus];
+        });
+    }
+    
     return self;
+}
+
+- (void)updatePriceStatus
+{
+    if ([self.currency.lastChange doubleValue] >=  minVailedPrice){
+        _priceNode.tintColor = changeUpColor;
+        _goingStatusImageNode.image = changeUpImage;
+        _goingStatusImageNode.hidden = false;
+    }
+    else if ([self.currency.lastChange doubleValue] <= -minVailedPrice){
+        _priceNode.tintColor = changeDownColor;
+        _goingStatusImageNode.image = changeDownImage;
+        _goingStatusImageNode.hidden = false;
+    }
+    else{
+        _priceNode.tintColor = [UIColor darkTextColor];
+        _goingStatusImageNode.hidden = true;
+    }
 }
 
 // 布局
@@ -129,13 +165,14 @@
      children: @[_priceNode, _convertPriceNode]];
     
     _changePercentNode.style.preferredSize = CGSizeMake(80, 30);
+    _goingStatusImageNode.style.preferredSize = CGSizeMake(5, 8);
     ASStackLayoutSpec *pricesPercentSpec =
     [ASStackLayoutSpec
      stackLayoutSpecWithDirection:ASStackLayoutDirectionHorizontal
-     spacing: 8.0
+     spacing: 4.0
      justifyContent:ASStackLayoutJustifyContentEnd  // 排列方向上往右挤压
      alignItems:ASStackLayoutAlignItemsCenter
-     children:@[pricesSpec, _changePercentNode]];
+     children:@[pricesSpec, _goingStatusImageNode, _changePercentNode]];
 
     ASLayoutSpec *pricesPercentSpec2 = [ASInsetLayoutSpec
                                            insetLayoutSpecWithInsets:UIEdgeInsetsMake(4, 4, 4, 4)

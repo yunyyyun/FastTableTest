@@ -11,6 +11,7 @@
 
 @interface CoinCellNode : ASCellNode
 
+@property (nonatomic, strong) CurrencyData *currency;
 - (instancetype)initWithCurrencyData:(CurrencyData *)data;
 
 @end
