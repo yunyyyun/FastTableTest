@@ -1,15 +1,17 @@
 //
-//  ViewController1.m
+//  ViewController_Texture.m
 //  AgileTable
 //
 //  Created by mengyun on 2019/5/23.
 //  Copyright © 2019 mengyun. All rights reserved.
 //
 
-#import "ViewController1.h"
+#import "ViewController_Texture.h"
 #import "CoinCellNode.h"
 
-@interface ViewController1 ()<ASTableDataSource, ASTableDelegate>
+#import "CoinDetailViewController.h"
+
+@interface ViewController_Texture ()<ASTableDataSource, ASTableDelegate>
 
 @property(nonatomic, strong) CurrencyDataList* listData;
 @property(strong,nonatomic) ASTableNode* tableNode;
@@ -17,7 +19,7 @@
 
 @end
 
-@implementation ViewController1
+@implementation ViewController_Texture
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -67,8 +69,7 @@
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-    
-    self.tableNode.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
+    self.tableNode.frame = self.view.bounds;
 }
 
 - (NSInteger)tableNode:(ASTableNode *)tableNode numberOfRowsInSection:(NSInteger)section {
@@ -107,9 +108,10 @@
 // 3
 - (void)tableNode:(ASTableNode *)tableNode didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableNode deselectRowAtIndexPath:indexPath animated:YES];
-    
-    // 你自己的代码
-    
+
+    CoinDetailViewController *detailVC = [[CoinDetailViewController alloc] init];
+    detailVC.hidesBottomBarWhenPushed = true;
+    [self.navigationController pushViewController: detailVC animated: true];
 }
 
 //- (void)loadPageWithContext:(ASBatchContext *)context

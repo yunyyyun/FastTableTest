@@ -31,7 +31,7 @@
         _logoImageNode = [[ASNetworkImageNode alloc] init];
         _logoImageNode.URL = [NSURL URLWithString: data.logo];
         [self addSubnode: _logoImageNode];
-        _logoImageNode.placeholderFadeDuration = 3;
+        _logoImageNode.placeholderFadeDuration = 3; // 防止闪
         // _logoImageNode.placeholderColor = [UIColor clearColor];
         
         _rankNode = [[ASTextNode alloc] init];
@@ -45,6 +45,9 @@
         _nameNode = [[ASTextNode alloc] init];
         _nameNode.attributedText = [[NSAttributedString alloc]initWithString: data.alias attributes:@{NSForegroundColorAttributeName: [UIColor lightGrayColor],NSFontAttributeName: [UIFont systemFontOfSize:12 weight: UIFontWeightRegular]}];
         [self addSubnode: _nameNode];
+        _nameNode.truncationMode = NSLineBreakByTruncatingTail;
+        _nameNode.maximumNumberOfLines = 1;
+        // _nameNode.truncationAttributedText = [[NSAttributedString alloc]initWithString:@"¶¶¶"];
         
         _marketCapNode = [[ASTextNode alloc] init];
         _marketCapNode.attributedText = [[NSAttributedString alloc]initWithString: [NSString stringWithFormat: @"市值 ¥%@", data.marketCapCnyDisplay] attributes:@{NSForegroundColorAttributeName: [UIColor lightGrayColor],NSFontAttributeName: [UIFont systemFontOfSize:12 weight: UIFontWeightRegular]}];
@@ -73,7 +76,6 @@
             _changePercentNode.backgroundColor = [UIColor colorWithRed: 0/255.0 green: 167/255.0 blue: 50/255.0 alpha: 0.9];
         }
         _changePercentNode.cornerRadius = 2.0;
-        // _changePercentNode.titleNode.
         [self addSubnode: _changePercentNode];
      
         _lineNode = [[ASDisplayNode alloc] init];
@@ -90,12 +92,12 @@
     _logoImageNode.style.preferredSize = CGSizeMake(30, 30);
     ASStackLayoutSpec *logoRankSpec =
     [ASStackLayoutSpec
-     stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical
+     stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical // 竖直排列
      spacing:4.0
-     justifyContent:ASStackLayoutJustifyContentStart
-     alignItems:ASStackLayoutAlignItemsCenter
+     justifyContent:ASStackLayoutJustifyContentCenter // 排列方向上居中
+     alignItems:ASStackLayoutAlignItemsCenter   // 水平方向居中对齐
      children: @[_logoImageNode, _rankNode]];
-    
+
     // BTC bitcoin
     ASStackLayoutSpec *nameSymbolSpec =
     [ASStackLayoutSpec
@@ -104,6 +106,8 @@
      justifyContent:ASStackLayoutJustifyContentStart
      alignItems:ASStackLayoutAlignItemsEnd
      children:@[_symbolNode, _nameNode]];
+    // _nameNode.style.preferredSize = CGSizeMake(160, 15);
+    _nameNode.style.maxWidth = ASDimensionMakeWithPoints(122);
     
     ASStackLayoutSpec *nameSymbolMarketSpec =
     [ASStackLayoutSpec
@@ -112,7 +116,7 @@
      justifyContent:ASStackLayoutJustifyContentStart
      alignItems:ASStackLayoutAlignItemsStretch
      children: @[nameSymbolSpec, _marketCapNode]];
-    
+
     ASLayoutSpec *nameSymbolMarketSpec2 = [ASInsetLayoutSpec
                                                insetLayoutSpecWithInsets:UIEdgeInsetsMake(5, 4, 4, 4)
                                                 child: nameSymbolMarketSpec];
@@ -129,22 +133,22 @@
     [ASStackLayoutSpec
      stackLayoutSpecWithDirection:ASStackLayoutDirectionHorizontal
      spacing: 8.0
-     justifyContent:ASStackLayoutJustifyContentStart
+     justifyContent:ASStackLayoutJustifyContentEnd  // 排列方向上往右挤压
      alignItems:ASStackLayoutAlignItemsCenter
      children:@[pricesSpec, _changePercentNode]];
-    
+
     ASLayoutSpec *pricesPercentSpec2 = [ASInsetLayoutSpec
-                                           insetLayoutSpecWithInsets:UIEdgeInsetsMake(5, 4, 4, 4)
+                                           insetLayoutSpecWithInsets:UIEdgeInsetsMake(4, 4, 4, 4)
                                            child: pricesPercentSpec];
-    
+
     ASStackLayoutSpec *mainStackContent =
     [ASStackLayoutSpec
      stackLayoutSpecWithDirection:ASStackLayoutDirectionHorizontal
      spacing:4.0
      justifyContent:ASStackLayoutJustifyContentStart
-     alignItems:ASStackLayoutAlignItemsStretch
+     alignItems:ASStackLayoutAlignItemsCenter
      children: @[logoRankSpec, nameSymbolMarketSpec2]];
-    
+
     ASStackLayoutSpec *allSpec =
     [ASStackLayoutSpec
      stackLayoutSpecWithDirection:ASStackLayoutDirectionHorizontal
@@ -152,10 +156,10 @@
      justifyContent:ASStackLayoutJustifyContentSpaceBetween
      alignItems:ASStackLayoutAlignItemsCenter
      children: @[mainStackContent, pricesPercentSpec2]];
-    mainStackContent.style.flexShrink = 0.5;
-    pricesPercentSpec2.style.flexShrink = 0.3;
-    
-    _lineNode.style.preferredSize = CGSizeMake(360, 0.5);
+    mainStackContent.style.flexShrink = 0.4;
+    pricesPercentSpec2.style.flexShrink = 0.2;
+
+    _lineNode.style.preferredSize = CGSizeMake(500, 0.5);
     ASStackLayoutSpec *allSpecWithLine =
     [ASStackLayoutSpec
      stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical
@@ -163,10 +167,16 @@
      justifyContent:ASStackLayoutJustifyContentSpaceBetween
      alignItems:ASStackLayoutAlignItemsStretch
      children: @[allSpec, _lineNode]];
-    
+
+    // allSpecWithLine.style.preferredSize = CGSizeMake(355, 66);
     return [ASInsetLayoutSpec
             insetLayoutSpecWithInsets:UIEdgeInsetsMake(10, 16, 0, 12)
             child: allSpecWithLine];
 }
+
+//- (CGSize)calculateSizeThatFits:(CGSize)constrainedSize{
+//    return CGSizeMake(355, 166);
+//}
+
 
 @end

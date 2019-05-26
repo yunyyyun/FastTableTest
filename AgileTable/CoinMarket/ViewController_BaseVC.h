@@ -1,5 +1,5 @@
 //
-//  ViewController0.h
+//  ViewController_BaseVC.h
 //  AgileTable
 //
 //  Created by mengyun on 2019/5/17.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface ViewController0 : BaseViewController
+@interface ViewController_BaseVC : BaseViewController
 
 
 @end

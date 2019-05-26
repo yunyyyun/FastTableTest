@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5144BBB1229ADEA600814F52 /* CoinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5144BBB0229ADEA600814F52 /* CoinDetailViewController.m */; };
 		51829F92229068E200F80D9A /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51829F90229068E200F80D9A /* TitleCell.m */; };
 		51829F93229068E200F80D9A /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51829F91229068E200F80D9A /* TitleCell.xib */; };
 		BB09FC8E228E8CC600E3B37B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FC8D228E8CC600E3B37B /* AppDelegate.m */; };
-		BB09FC91228E8CC600E3B37B /* ViewController0.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FC90228E8CC600E3B37B /* ViewController0.m */; };
+		BB09FC91228E8CC600E3B37B /* ViewController_BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FC90228E8CC600E3B37B /* ViewController_BaseVC.m */; };
 		BB09FC94228E8CC600E3B37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB09FC92228E8CC600E3B37B /* Main.storyboard */; };
 		BB09FC96228E8CC800E3B37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB09FC95228E8CC800E3B37B /* Assets.xcassets */; };
 		BB09FC99228E8CC800E3B37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB09FC97228E8CC800E3B37B /* LaunchScreen.storyboard */; };
@@ -22,7 +23,7 @@
 		BB09FCB5228EBF7E00E3B37B /* CoinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FCB3228EBF7E00E3B37B /* CoinCell.m */; };
 		BB09FCB6228EBF7E00E3B37B /* CoinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB09FCB4228EBF7E00E3B37B /* CoinCell.xib */; };
 		BB9CBB2F2292C7A100251B7C /* CurrencyData.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBB2E2292C7A100251B7C /* CurrencyData.m */; };
-		BB9CBC262296BA6900251B7C /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC252296BA6900251B7C /* ViewController1.m */; };
+		BB9CBC262296BA6900251B7C /* ViewController_Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC252296BA6900251B7C /* ViewController_Texture.m */; };
 		BB9CBC2C2296BB4C00251B7C /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC282296BB4C00251B7C /* YYWeakProxy.m */; };
 		BB9CBC2D2296BB4C00251B7C /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC2A2296BB4C00251B7C /* YYFPSLabel.m */; };
 		BB9CBC342296C0D800251B7C /* CoinCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC332296C0D800251B7C /* CoinCellNode.m */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5144BBAF229ADEA600814F52 /* CoinDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinDetailViewController.h; sourceTree = "<group>"; };
+		5144BBB0229ADEA600814F52 /* CoinDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinDetailViewController.m; sourceTree = "<group>"; };
 		51829F8F229068E200F80D9A /* TitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
 		51829F90229068E200F80D9A /* TitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
 		51829F91229068E200F80D9A /* TitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
@@ -43,8 +46,8 @@
 		BB09FC89228E8CC600E3B37B /* AgileTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB09FC8C228E8CC600E3B37B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB09FC8D228E8CC600E3B37B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BB09FC8F228E8CC600E3B37B /* ViewController0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController0.h; sourceTree = "<group>"; };
-		BB09FC90228E8CC600E3B37B /* ViewController0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController0.m; sourceTree = "<group>"; };
+		BB09FC8F228E8CC600E3B37B /* ViewController_BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController_BaseVC.h; sourceTree = "<group>"; };
+		BB09FC90228E8CC600E3B37B /* ViewController_BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_BaseVC.m; sourceTree = "<group>"; };
 		BB09FC93228E8CC600E3B37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB09FC95228E8CC800E3B37B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB09FC98228E8CC800E3B37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,8 +66,8 @@
 		BB09FCB4228EBF7E00E3B37B /* CoinCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinCell.xib; sourceTree = "<group>"; };
 		BB9CBB2D2292C7A100251B7C /* CurrencyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyData.h; sourceTree = "<group>"; };
 		BB9CBB2E2292C7A100251B7C /* CurrencyData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyData.m; sourceTree = "<group>"; };
-		BB9CBC242296BA6900251B7C /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
-		BB9CBC252296BA6900251B7C /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		BB9CBC242296BA6900251B7C /* ViewController_Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController_Texture.h; sourceTree = "<group>"; };
+		BB9CBC252296BA6900251B7C /* ViewController_Texture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_Texture.m; sourceTree = "<group>"; };
 		BB9CBC282296BB4C00251B7C /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 		BB9CBC292296BB4C00251B7C /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		BB9CBC2A2296BB4C00251B7C /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
@@ -100,10 +103,12 @@
 				BB9CBC2E2296BE7700251B7C /* Node */,
 				BB9CBB2C2292C71100251B7C /* Data */,
 				BB9CBB2B2292C6ED00251B7C /* Cell */,
-				BB09FC8F228E8CC600E3B37B /* ViewController0.h */,
-				BB09FC90228E8CC600E3B37B /* ViewController0.m */,
-				BB9CBC242296BA6900251B7C /* ViewController1.h */,
-				BB9CBC252296BA6900251B7C /* ViewController1.m */,
+				BB09FC8F228E8CC600E3B37B /* ViewController_BaseVC.h */,
+				BB09FC90228E8CC600E3B37B /* ViewController_BaseVC.m */,
+				BB9CBC242296BA6900251B7C /* ViewController_Texture.h */,
+				BB9CBC252296BA6900251B7C /* ViewController_Texture.m */,
+				5144BBAF229ADEA600814F52 /* CoinDetailViewController.h */,
+				5144BBB0229ADEA600814F52 /* CoinDetailViewController.m */,
 			);
 			path = CoinMarket;
 			sourceTree = "<group>";
@@ -352,13 +357,14 @@
 				BB09FCAD228E928700E3B37B /* BaseViewController.m in Sources */,
 				BB9CBC482297F68200251B7C /* MYTabBarViewController.m in Sources */,
 				BB9CBC342296C0D800251B7C /* CoinCellNode.m in Sources */,
-				BB09FC91228E8CC600E3B37B /* ViewController0.m in Sources */,
+				BB09FC91228E8CC600E3B37B /* ViewController_BaseVC.m in Sources */,
+				5144BBB1229ADEA600814F52 /* CoinDetailViewController.m in Sources */,
 				BB09FC9C228E8CC800E3B37B /* main.m in Sources */,
 				BB9CBC402297CC7300251B7C /* Config.m in Sources */,
 				BB09FCB1228E93FD00E3B37B /* CellDataModel.m in Sources */,
 				BB09FCB5228EBF7E00E3B37B /* CoinCell.m in Sources */,
 				BB9CBB2F2292C7A100251B7C /* CurrencyData.m in Sources */,
-				BB9CBC262296BA6900251B7C /* ViewController1.m in Sources */,
+				BB9CBC262296BA6900251B7C /* ViewController_Texture.m in Sources */,
 				BB9CBC2C2296BB4C00251B7C /* YYWeakProxy.m in Sources */,
 				BB9CBC2D2296BB4C00251B7C /* YYFPSLabel.m in Sources */,
 				BB9CBC3B2297C83E00251B7C /* UITableView+Refresh.m in Sources */,
@@ -509,7 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TS559DR96;
+				DEVELOPMENT_TEAM = 27EUXE9QPG;
 				GCC_PREFIX_HEADER = "AgileTable/BBQ-prefix.pch";
 				INFOPLIST_FILE = AgileTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,7 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TS559DR96;
+				DEVELOPMENT_TEAM = 27EUXE9QPG;
 				GCC_PREFIX_HEADER = "AgileTable/BBQ-prefix.pch";
 				INFOPLIST_FILE = AgileTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

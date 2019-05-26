@@ -40,8 +40,8 @@
 
 + (NSURLSessionDataTask *)getDatasSuccess:(void (^)(CurrencyDataList* data))success failure:(void (^)(int code, NSString *error))failure{
     
-    NSDictionary *params = @{@"pageNum": @(1),
-                             @"pageSize": @(99),
+    NSDictionary *params = @{@"pageNum": @(3),
+                             @"pageSize": @(38),
                              @"sort": @"",
                              };
     return [CurrencyDataList requestDataWithHost: @"/market/front/currencys/"

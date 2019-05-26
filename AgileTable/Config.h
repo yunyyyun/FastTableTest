@@ -10,6 +10,9 @@
 #define Config_h
 #import <Foundation/Foundation.h>
 
+#define WindowWidth CGRectGetWidth([UIApplication sharedApplication].keyWindow.bounds)
+#define WindowHeight CGRectGetHeight([UIApplication sharedApplication].keyWindow.bounds)
+
 #define minVailedPrice 0.0000000001
 #define changeUpColor [UIColor colorWithRed: 235/255.0 green: 47/255.0 blue: 47/255.0 alpha: 0.9]
 #define changeDownColor [UIColor colorWithRed: 0/255.0 green: 167/255.0 blue: 50/255.0 alpha: 0.9]
@@ -18,7 +21,7 @@
 
 #define isInAnimation @1
 #define isNotInAnimation @0
-#define fpsEnabled true
+#define fpsEnabled false
 
 // weakify strongify
 #define weakify( x ) \

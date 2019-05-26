@@ -1,22 +1,22 @@
 //
-//  ViewController0.m
+//  ViewController_BaseVC.m
 //  AgileTable
 //
 //  Created by mengyun on 2019/5/17.
 //  Copyright © 2019 mengyun. All rights reserved.
 //
 #import "UITableView+Refresh.h"
-#import "ViewController0.h"
+#import "ViewController_BaseVC.h"
 #import "CoinCell.h"
 
-@interface ViewController0 ()
+@interface ViewController_BaseVC ()
 
 @property(nonatomic, strong) CurrencyDataList* listData;
 @property (nonatomic, strong) NSTimer *timer;
 
 @end
 
-@implementation ViewController0
+@implementation ViewController_BaseVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

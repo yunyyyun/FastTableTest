@@ -13,14 +13,4 @@
 
 - (instancetype)initWithCurrencyData:(CurrencyData *)data;
 
-//@property (strong, nonatomic) UILabel *symbolLabel;
-//@property (strong, nonatomic) UILabel *nameLabel;
-//@property (strong, nonatomic) UILabel *rankLabel;
-//@property (strong, nonatomic) UILabel *marketCapLabel;
-//@property (strong, nonatomic) UILabel *priceLabel;
-//@property (strong, nonatomic) UILabel *convertPriceLabel;
-//@property (strong, nonatomic) UIButton *changePercentButton;
-
-
-
 @end
