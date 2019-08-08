@@ -975,6 +975,10 @@
                              @"pageSize": @(commonPageSize),
                              @"sort": SafeString(sort),
                              };
+//    DMCurrency *c = [[DMCurrency alloc] init];
+//    NSArray *currencies = @[c];
+//    success(currencies);
+//    return nil;
     return [[HTTPRequest shareObject] GETAndDetailData:@"/market/front/currencys" parameters: params success:^(NSDictionary<NSString *,id> * _Nonnull responseObject) {
         NSArray *list = [[responseObject valueForKey:@"data"] valueForKey:@"list"];
         NSArray<DMCurrency *> *currencies = [self datasWithArray:list];

@@ -58,23 +58,13 @@
                                         <rect key="frame" x="0.0" y="70" width="1160" height="713.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZZ-iN-cqo" customClass="CoinView">
-                                        <rect key="frame" x="0.0" y="0.0" width="1160" height="66"/>
-                                        <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="66" id="i8s-4z-QA4"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="bDX-D1-MJT" secondAttribute="bottom" id="AdP-H1-uTc"/>
                                     <constraint firstAttribute="trailing" secondItem="bDX-D1-MJT" secondAttribute="trailing" id="Nfd-Sv-T5l"/>
-                                    <constraint firstItem="XZZ-iN-cqo" firstAttribute="top" secondItem="wpx-rz-nUw" secondAttribute="top" id="OZN-Bw-w8K"/>
-                                    <constraint firstAttribute="trailing" secondItem="XZZ-iN-cqo" secondAttribute="trailing" id="OsD-ac-hZ7"/>
                                     <constraint firstItem="bDX-D1-MJT" firstAttribute="leading" secondItem="wpx-rz-nUw" secondAttribute="leading" id="RTO-Tu-7Ik"/>
                                     <constraint firstItem="bDX-D1-MJT" firstAttribute="top" secondItem="wpx-rz-nUw" secondAttribute="top" constant="70" id="dY1-sc-FMP"/>
-                                    <constraint firstItem="XZZ-iN-cqo" firstAttribute="leading" secondItem="wpx-rz-nUw" secondAttribute="leading" id="lWC-TP-Db2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGd-5A-9lZ">
@@ -131,7 +121,6 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
-                <outlet property="coinView" destination="XZZ-iN-cqo" id="unY-QQ-30d"/>
                 <outlet property="leftView" destination="IjS-pG-IUz" id="UoL-9X-PSr"/>
                 <outlet property="middleView" destination="wpx-rz-nUw" id="Nkf-4q-1Oo"/>
                 <outlet property="priceTrendView" destination="bDX-D1-MJT" id="UWU-KD-Di5"/>

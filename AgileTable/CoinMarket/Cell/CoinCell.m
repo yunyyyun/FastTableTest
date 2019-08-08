@@ -23,7 +23,7 @@
 //@property (strong, nonatomic) IBOutlet UIButton *changePercentButton;
 //@property (strong, nonatomic) IBOutlet UIImageView *goingStatusImageView;
 @property (weak, nonatomic) IBOutlet PriceHistoryView *priceTrendView;
-@property (weak, nonatomic) IBOutlet CoinView *coinView;
+@property (weak, nonatomic) CoinView *coinView;
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *middleView;
@@ -62,15 +62,13 @@
         CGFloat w = self.scrollView.frame.size.width;
         CGFloat offsetX = w+[data.pageNum intValue]*w;
         self.scrollView.contentOffset = CGPointMake(offsetX, 0);
+        self.coinView.frame = CGRectMake(0, 0, self.middleView.frame.size.width, 66);
         [self.scrollView layoutIfNeeded];
         [self.scrollView setNeedsDisplay];
     });
     
     self.currency = data;
-    NSArray *objs = [[NSBundle mainBundle]loadNibNamed:@"CoinView" owner:nil options:nil];
-    CoinView *coinView = objs.firstObject;
     self.coinView.currency = data;
-    self.coinView = coinView;
     //[self.logoImageView sd_setImageWithURL:[NSURL URLWithString:data.logo]];
     
 //    // 价格变动动画
@@ -152,6 +150,15 @@
         _priceTrendView.layer.masksToBounds = false;
     }
     _priceTrendView.datas = _currency.trendDatas;
+}
+
+- (CoinView *)coinView{
+    if (!_coinView){
+        _coinView = [[NSBundle mainBundle] loadNibNamed:@"CoinView" owner:nil options:nil].firstObject;
+        _coinView.backgroundColor = [UIColor redColor];
+        [self.middleView addSubview: _coinView];
+    }
+    return _coinView;
 }
 
 - (IBAction)onOpen:(UIButton *)sender {

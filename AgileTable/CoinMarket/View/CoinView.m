@@ -36,8 +36,7 @@
 }
 
 - (void)setCurrency:(DMCurrency *)currency{
-    [self.coinImageView sd_setImageWithURL:[NSURL URLWithString:currency.logo]];
-    
+    _currency = currency;
     // 价格变动动画
 //    [self updatePriceStatus];
 //    if (!data.isAnimated) {
@@ -50,8 +49,9 @@
 //        });
 //    }
     
+    [self.coinImageView sd_setImageWithURL:[NSURL URLWithString:currency.logo]];
     self.rankLabel.text = currency.display_rank;
-    self.rankLabel.textColor = currency.rank<4 ? [UIColor yellowColor] : [UIColor colorWithWhite: 191/255.0 alpha:1];
+    self.rankLabel.textColor = currency.rank<4 ? [UIColor redColor] : [UIColor colorWithWhite: 191/255.0 alpha:1];
     if (currency.rank>9999){
         self.rankLabel.font = [UIFont systemFontOfSize:11 weight: UIFontWeightRegular];
         self.rankLabel.text = @"999+";
@@ -80,13 +80,13 @@
     self.volumeLabel.text = currency.display_volume;
     self.convertPriceLabel.text = currency.display_convertprice;
     self.changeLabel.text = currency.display_changepercent;
-//
-//    if ([data.changePercent isKindOfClass: [NSNumber class]]){
-//        self.changeImageView.backgroundColor = [data.changePercent doubleValue]>=0 ? changeUpColor : changeDownColor;
-//    }
-//    else{
-//        self.changeImageView.backgroundColor = [UIColor colorWithWhite:153/255.0 alpha: 0.4];
-//    }
+
+    if ([currency.changePercent isKindOfClass: [NSNumber class]]){
+        self.changeImageView.backgroundColor = [currency.changePercent doubleValue]>=0 ? changeUpColor : changeDownColor;
+    }
+    else{
+        self.changeImageView.backgroundColor = [UIColor colorWithWhite:153/255.0 alpha: 0.4];
+    }
 }
 
 @end
