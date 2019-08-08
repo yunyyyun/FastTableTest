@@ -14,6 +14,7 @@ pod 'SDWebImage'
 pod 'Texture'
 pod 'Masonry'
 pod 'PlotKitBase'
+pod 'YYModel', '~> 1.0.4'
   # Pods for AgileTable
 
 end

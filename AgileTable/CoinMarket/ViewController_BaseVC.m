@@ -11,8 +11,12 @@
 
 @interface ViewController_BaseVC ()
 
-@property(nonatomic, strong) CurrencyDataList* listData;
+// @property(nonatomic, strong) CurrencyDataList* listData;
 @property (nonatomic, strong) NSTimer *timer;
+
+@property (nonatomic, strong) NSURLSessionDataTask *task;
+@property (nonatomic, strong) NSMutableArray *datas;
+@property (nonatomic, assign) int page;
 
 @end
 
@@ -57,13 +61,32 @@
 }
 
 - (void) requestData{
-    [CurrencyDataList getDatasSuccess:^(CurrencyDataList * _Nonnull data) {
-        self.listData = data;
+//    [CurrencyDataList getDatasSuccess:^(CurrencyDataList * _Nonnull data) {
+//        self.listData = data;
+//        [self updateUI];
+//
+//        [self.tableView endRefresh];
+//    } failure:^(int code, NSString * _Nonnull error) {
+//
+//        [self.tableView endRefresh];
+//    }];
+    
+    NSString *sort = @"";
+    @weakify(self);
+    int page = self.page;
+    self.task = [DMCurrency getCurrenciesWithPage: page Sort: sort sucess:^(NSArray *currencies) {
+        @strongify(self);
+        BOOL isMore = currencies.count>=commonPageSize;
+        if (self.datas.count<1) self.datas = [NSMutableArray array];
+        self.page = page;
+        [self.datas addObjectsFromArray: currencies];
+        
         [self updateUI];
-        
+        // self.tableView.isMore = currencies.count>=commonPageSize;
         [self.tableView endRefresh];
-    } failure:^(int code, NSString * _Nonnull error) {
+        // [self.tableView endLoadMore];
         
+    } failure:^(int code, NSString *error) {
         [self.tableView endRefresh];
     }];
 }
@@ -84,7 +107,7 @@
     
     NSMutableArray<CellDataModel *> *section1 = [NSMutableArray array];
     [cellArray addObject:section1];
-    [self.listData.list enumerateObjectsUsingBlock:^(CurrencyData *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.datas enumerateObjectsUsingBlock:^(CurrencyData *obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj.height intValue]<10)
             obj.height = @cellDefaultHeight;
         CellDataModel *coinCelldata = [[CellDataModel alloc] initWithCellClassName:@"CoinCell" data: obj];

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CoinCell : BaseTableViewCell
 
-@property (strong, nonatomic) CurrencyData *currency;
+@property (strong, nonatomic) DMCurrency *currency;
 
 @end
 

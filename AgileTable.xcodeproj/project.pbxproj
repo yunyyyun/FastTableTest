@@ -20,6 +20,14 @@
 		517E578D22FBCABE00CFFDD3 /* DES3Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E578922FBCABE00CFFDD3 /* DES3Util.m */; };
 		517E579022FBCD8E00CFFDD3 /* LXMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E578F22FBCD8E00CFFDD3 /* LXMethod.m */; };
 		517E579322FBCEF100CFFDD3 /* UDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E579222FBCEF100CFFDD3 /* UDID.m */; };
+		517E579822FC2A0B00CFFDD3 /* CoinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517E579522FC2A0A00CFFDD3 /* CoinView.xib */; };
+		517E579922FC2A0B00CFFDD3 /* CoinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E579722FC2A0A00CFFDD3 /* CoinView.m */; };
+		517E579E22FC2FF900CFFDD3 /* DMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E579B22FC2FF800CFFDD3 /* DMData.m */; };
+		517E579F22FC2FF900CFFDD3 /* DMCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E579C22FC2FF800CFFDD3 /* DMCurrency.m */; };
+		517E57A322FC386B00CFFDD3 /* NSString+PriceVolumeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E57A122FC386A00CFFDD3 /* NSString+PriceVolumeFormatter.m */; };
+		517E57A622FC39FB00CFFDD3 /* NSString+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E57A522FC39FB00CFFDD3 /* NSString+Formatter.m */; };
+		517E57A922FC3DBB00CFFDD3 /* JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E57A822FC3DBB00CFFDD3 /* JsonModel.m */; };
+		517E57AF22FC3F0900CFFDD3 /* CurrencyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E57AD22FC3F0900CFFDD3 /* CurrencyData.m */; };
 		51829F92229068E200F80D9A /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51829F90229068E200F80D9A /* TitleCell.m */; };
 		51829F93229068E200F80D9A /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51829F91229068E200F80D9A /* TitleCell.xib */; };
 		BB09FC8E228E8CC600E3B37B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FC8D228E8CC600E3B37B /* AppDelegate.m */; };
@@ -34,7 +42,6 @@
 		BB09FCB1228E93FD00E3B37B /* CellDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FCB0228E93FD00E3B37B /* CellDataModel.m */; };
 		BB09FCB5228EBF7E00E3B37B /* CoinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FCB3228EBF7E00E3B37B /* CoinCell.m */; };
 		BB09FCB6228EBF7E00E3B37B /* CoinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB09FCB4228EBF7E00E3B37B /* CoinCell.xib */; };
-		BB9CBB2F2292C7A100251B7C /* CurrencyData.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBB2E2292C7A100251B7C /* CurrencyData.m */; };
 		BB9CBC262296BA6900251B7C /* ViewController_Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC252296BA6900251B7C /* ViewController_Texture.m */; };
 		BB9CBC2C2296BB4C00251B7C /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC282296BB4C00251B7C /* YYWeakProxy.m */; };
 		BB9CBC2D2296BB4C00251B7C /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CBC2A2296BB4C00251B7C /* YYFPSLabel.m */; };
@@ -75,6 +82,21 @@
 		517E578F22FBCD8E00CFFDD3 /* LXMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMethod.m; sourceTree = "<group>"; };
 		517E579122FBCEF100CFFDD3 /* UDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDID.h; sourceTree = "<group>"; };
 		517E579222FBCEF100CFFDD3 /* UDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDID.m; sourceTree = "<group>"; };
+		517E579522FC2A0A00CFFDD3 /* CoinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoinView.xib; sourceTree = "<group>"; };
+		517E579622FC2A0A00CFFDD3 /* CoinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinView.h; sourceTree = "<group>"; };
+		517E579722FC2A0A00CFFDD3 /* CoinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinView.m; sourceTree = "<group>"; };
+		517E579A22FC2FF800CFFDD3 /* DMCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCurrency.h; sourceTree = "<group>"; };
+		517E579B22FC2FF800CFFDD3 /* DMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMData.m; sourceTree = "<group>"; };
+		517E579C22FC2FF800CFFDD3 /* DMCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCurrency.m; sourceTree = "<group>"; };
+		517E579D22FC2FF800CFFDD3 /* DMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMData.h; sourceTree = "<group>"; };
+		517E57A122FC386A00CFFDD3 /* NSString+PriceVolumeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PriceVolumeFormatter.m"; sourceTree = "<group>"; };
+		517E57A222FC386A00CFFDD3 /* NSString+PriceVolumeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PriceVolumeFormatter.h"; sourceTree = "<group>"; };
+		517E57A422FC39FB00CFFDD3 /* NSString+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Formatter.h"; sourceTree = "<group>"; };
+		517E57A522FC39FB00CFFDD3 /* NSString+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Formatter.m"; sourceTree = "<group>"; };
+		517E57A722FC3DBA00CFFDD3 /* JsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonModel.h; sourceTree = "<group>"; };
+		517E57A822FC3DBB00CFFDD3 /* JsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonModel.m; sourceTree = "<group>"; };
+		517E57AD22FC3F0900CFFDD3 /* CurrencyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyData.m; sourceTree = "<group>"; };
+		517E57AE22FC3F0900CFFDD3 /* CurrencyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyData.h; sourceTree = "<group>"; };
 		51829F8F229068E200F80D9A /* TitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
 		51829F90229068E200F80D9A /* TitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
 		51829F91229068E200F80D9A /* TitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
@@ -102,8 +124,6 @@
 		BB09FCB2228EBF7E00E3B37B /* CoinCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinCell.h; sourceTree = "<group>"; };
 		BB09FCB3228EBF7E00E3B37B /* CoinCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinCell.m; sourceTree = "<group>"; };
 		BB09FCB4228EBF7E00E3B37B /* CoinCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinCell.xib; sourceTree = "<group>"; };
-		BB9CBB2D2292C7A100251B7C /* CurrencyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyData.h; sourceTree = "<group>"; };
-		BB9CBB2E2292C7A100251B7C /* CurrencyData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyData.m; sourceTree = "<group>"; };
 		BB9CBC242296BA6900251B7C /* ViewController_Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController_Texture.h; sourceTree = "<group>"; };
 		BB9CBC252296BA6900251B7C /* ViewController_Texture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController_Texture.m; sourceTree = "<group>"; };
 		BB9CBC282296BB4C00251B7C /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
@@ -175,9 +195,31 @@
 			path = 3DESiOS;
 			sourceTree = "<group>";
 		};
+		517E579422FC29F100CFFDD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				517E579622FC2A0A00CFFDD3 /* CoinView.h */,
+				517E579722FC2A0A00CFFDD3 /* CoinView.m */,
+				517E579522FC2A0A00CFFDD3 /* CoinView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		517E57A022FC385200CFFDD3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				517E57A422FC39FB00CFFDD3 /* NSString+Formatter.h */,
+				517E57A522FC39FB00CFFDD3 /* NSString+Formatter.m */,
+				517E57A222FC386A00CFFDD3 /* NSString+PriceVolumeFormatter.h */,
+				517E57A122FC386A00CFFDD3 /* NSString+PriceVolumeFormatter.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		51829F8E229068AA00F80D9A /* CoinMarket */ = {
 			isa = PBXGroup;
 			children = (
+				517E579422FC29F100CFFDD3 /* View */,
 				BB9CBB2C2292C71100251B7C /* Data */,
 				BB9CBC2E2296BE7700251B7C /* Node */,
 				BB9CBB2B2292C6ED00251B7C /* Cell */,
@@ -220,6 +262,7 @@
 		BB09FC8B228E8CC600E3B37B /* AgileTable */ = {
 			isa = PBXGroup;
 			children = (
+				517E57A022FC385200CFFDD3 /* Category */,
 				517E578022FBCABE00CFFDD3 /* 3DESiOS */,
 				BB9CBC412297CC8600251B7C /* Config.h */,
 				BB9CBC3F2297CC7300251B7C /* Config.m */,
@@ -289,8 +332,14 @@
 		BB9CBB2C2292C71100251B7C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				BB9CBB2D2292C7A100251B7C /* CurrencyData.h */,
-				BB9CBB2E2292C7A100251B7C /* CurrencyData.m */,
+				517E57AE22FC3F0900CFFDD3 /* CurrencyData.h */,
+				517E57AD22FC3F0900CFFDD3 /* CurrencyData.m */,
+				517E57A722FC3DBA00CFFDD3 /* JsonModel.h */,
+				517E57A822FC3DBB00CFFDD3 /* JsonModel.m */,
+				517E579A22FC2FF800CFFDD3 /* DMCurrency.h */,
+				517E579C22FC2FF800CFFDD3 /* DMCurrency.m */,
+				517E579D22FC2FF800CFFDD3 /* DMData.h */,
+				517E579B22FC2FF800CFFDD3 /* DMData.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -394,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB09FC99228E8CC800E3B37B /* LaunchScreen.storyboard in Resources */,
+				517E579822FC2A0B00CFFDD3 /* CoinView.xib in Resources */,
 				BB09FCB6228EBF7E00E3B37B /* CoinCell.xib in Resources */,
 				BB09FC96228E8CC800E3B37B /* Assets.xcassets in Resources */,
 				BB09FC94228E8CC600E3B37B /* Main.storyboard in Resources */,
@@ -436,22 +486,28 @@
 				517E577F22FBCA5E00CFFDD3 /* KeyChainHandler.m in Sources */,
 				BB09FCAA228E8E8200E3B37B /* BaseTableViewCell.m in Sources */,
 				517E577A22FBCA5E00CFFDD3 /* HTTPRequest.m in Sources */,
+				517E579E22FC2FF900CFFDD3 /* DMData.m in Sources */,
 				BB09FCAD228E928700E3B37B /* BaseViewController.m in Sources */,
 				517E577D22FBCA5E00CFFDD3 /* BKQError.m in Sources */,
 				BB9CBC482297F68200251B7C /* MYTabBarViewController.m in Sources */,
 				517E578C22FBCABE00CFFDD3 /* GTMBase64.m in Sources */,
+				517E57A322FC386B00CFFDD3 /* NSString+PriceVolumeFormatter.m in Sources */,
 				BB9CBC342296C0D800251B7C /* CoinCellNode.m in Sources */,
+				517E57A622FC39FB00CFFDD3 /* NSString+Formatter.m in Sources */,
 				BB09FC91228E8CC600E3B37B /* ViewController_BaseVC.m in Sources */,
 				5144BBB1229ADEA600814F52 /* CoinDetailViewController.m in Sources */,
 				517E577722FBCA5E00CFFDD3 /* HTTPHelper.m in Sources */,
+				517E579922FC2A0B00CFFDD3 /* CoinView.m in Sources */,
 				BB09FC9C228E8CC800E3B37B /* main.m in Sources */,
 				BB9CBC402297CC7300251B7C /* Config.m in Sources */,
 				BB09FCB1228E93FD00E3B37B /* CellDataModel.m in Sources */,
 				517E579322FBCEF100CFFDD3 /* UDID.m in Sources */,
+				517E57A922FC3DBB00CFFDD3 /* JsonModel.m in Sources */,
+				517E579F22FC2FF900CFFDD3 /* DMCurrency.m in Sources */,
+				517E57AF22FC3F0900CFFDD3 /* CurrencyData.m in Sources */,
 				517E578D22FBCABE00CFFDD3 /* DES3Util.m in Sources */,
 				BB09FCB5228EBF7E00E3B37B /* CoinCell.m in Sources */,
 				517E578A22FBCABE00CFFDD3 /* NSData+Category.m in Sources */,
-				BB9CBB2F2292C7A100251B7C /* CurrencyData.m in Sources */,
 				BB9CBC262296BA6900251B7C /* ViewController_Texture.m in Sources */,
 				517E578B22FBCABE00CFFDD3 /* NSString+NSReplace.m in Sources */,
 				517E577822FBCA5E00CFFDD3 /* OpenUDID.m in Sources */,

@@ -15,7 +15,6 @@
 #import "LXMethod.h"
 
 #define useDes true
-#define isNilString(x) ![x isKindOfClass:[NSString class]] || (!(x.length > 0))
 
 static int UserUnLoginCode = 401;
 

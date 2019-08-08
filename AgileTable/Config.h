@@ -37,5 +37,8 @@ try{} @finally{} __typeof__(x) x = __weak_##x##__; \
 _Pragma("clang diagnostic pop")
 
 #define EDLog NSLog
+#define isNilString(x) ![x isKindOfClass:[NSString class]] //|| (!(x.length > 0))
+#define SafeString(x) (isNilString(x) ? @"" : x)
+#define commonPageSize 20
 
 #endif /* Config_h */
