@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5144BBB1229ADEA600814F52 /* CoinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5144BBB0229ADEA600814F52 /* CoinDetailViewController.m */; };
+		517E577722FBCA5E00CFFDD3 /* HTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E576322FBCA5E00CFFDD3 /* HTTPHelper.m */; };
+		517E577822FBCA5E00CFFDD3 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E576622FBCA5E00CFFDD3 /* OpenUDID.m */; };
+		517E577922FBCA5E00CFFDD3 /* HTTPRequest+Des.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E576922FBCA5E00CFFDD3 /* HTTPRequest+Des.m */; };
+		517E577A22FBCA5E00CFFDD3 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E576A22FBCA5E00CFFDD3 /* HTTPRequest.m */; };
+		517E577D22FBCA5E00CFFDD3 /* BKQError.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E577022FBCA5E00CFFDD3 /* BKQError.m */; };
+		517E577F22FBCA5E00CFFDD3 /* KeyChainHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E577422FBCA5E00CFFDD3 /* KeyChainHandler.m */; };
+		517E578A22FBCABE00CFFDD3 /* NSData+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E578522FBCABE00CFFDD3 /* NSData+Category.m */; };
+		517E578B22FBCABE00CFFDD3 /* NSString+NSReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E578622FBCABE00CFFDD3 /* NSString+NSReplace.m */; };
+		517E578C22FBCABE00CFFDD3 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E578822FBCABE00CFFDD3 /* GTMBase64.m */; };
+		517E578D22FBCABE00CFFDD3 /* DES3Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E578922FBCABE00CFFDD3 /* DES3Util.m */; };
+		517E579022FBCD8E00CFFDD3 /* LXMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E578F22FBCD8E00CFFDD3 /* LXMethod.m */; };
+		517E579322FBCEF100CFFDD3 /* UDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 517E579222FBCEF100CFFDD3 /* UDID.m */; };
 		51829F92229068E200F80D9A /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51829F90229068E200F80D9A /* TitleCell.m */; };
 		51829F93229068E200F80D9A /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51829F91229068E200F80D9A /* TitleCell.xib */; };
 		BB09FC8E228E8CC600E3B37B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB09FC8D228E8CC600E3B37B /* AppDelegate.m */; };
@@ -37,6 +49,32 @@
 /* Begin PBXFileReference section */
 		5144BBAF229ADEA600814F52 /* CoinDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinDetailViewController.h; sourceTree = "<group>"; };
 		5144BBB0229ADEA600814F52 /* CoinDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinDetailViewController.m; sourceTree = "<group>"; };
+		517E576322FBCA5E00CFFDD3 /* HTTPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPHelper.m; sourceTree = "<group>"; };
+		517E576422FBCA5E00CFFDD3 /* BKQError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKQError.h; sourceTree = "<group>"; };
+		517E576622FBCA5E00CFFDD3 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		517E576722FBCA5E00CFFDD3 /* KeyChainHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainHandler.h; sourceTree = "<group>"; };
+		517E576922FBCA5E00CFFDD3 /* HTTPRequest+Des.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTTPRequest+Des.m"; sourceTree = "<group>"; };
+		517E576A22FBCA5E00CFFDD3 /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		517E576B22FBCA5E00CFFDD3 /* HTTPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPHelper.h; sourceTree = "<group>"; };
+		517E576D22FBCA5E00CFFDD3 /* BKQErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKQErrorCode.h; sourceTree = "<group>"; };
+		517E577022FBCA5E00CFFDD3 /* BKQError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKQError.m; sourceTree = "<group>"; };
+		517E577122FBCA5E00CFFDD3 /* HTTPRequest+Des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HTTPRequest+Des.h"; sourceTree = "<group>"; };
+		517E577222FBCA5E00CFFDD3 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		517E577422FBCA5E00CFFDD3 /* KeyChainHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainHandler.m; sourceTree = "<group>"; };
+		517E577522FBCA5E00CFFDD3 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		517E578122FBCABE00CFFDD3 /* NSString+NSReplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSReplace.h"; sourceTree = "<group>"; };
+		517E578222FBCABE00CFFDD3 /* NSData+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Category.h"; sourceTree = "<group>"; };
+		517E578322FBCABE00CFFDD3 /* DES3Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DES3Util.h; sourceTree = "<group>"; };
+		517E578422FBCABE00CFFDD3 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		517E578522FBCABE00CFFDD3 /* NSData+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Category.m"; sourceTree = "<group>"; };
+		517E578622FBCABE00CFFDD3 /* NSString+NSReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSReplace.m"; sourceTree = "<group>"; };
+		517E578722FBCABE00CFFDD3 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		517E578822FBCABE00CFFDD3 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		517E578922FBCABE00CFFDD3 /* DES3Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DES3Util.m; sourceTree = "<group>"; };
+		517E578E22FBCD8E00CFFDD3 /* LXMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMethod.h; sourceTree = "<group>"; };
+		517E578F22FBCD8E00CFFDD3 /* LXMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMethod.m; sourceTree = "<group>"; };
+		517E579122FBCEF100CFFDD3 /* UDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDID.h; sourceTree = "<group>"; };
+		517E579222FBCEF100CFFDD3 /* UDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDID.m; sourceTree = "<group>"; };
 		51829F8F229068E200F80D9A /* TitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
 		51829F90229068E200F80D9A /* TitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
 		51829F91229068E200F80D9A /* TitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
@@ -97,11 +135,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		517E576022FBCA5E00CFFDD3 /* HTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				517E579122FBCEF100CFFDD3 /* UDID.h */,
+				517E579222FBCEF100CFFDD3 /* UDID.m */,
+				517E578E22FBCD8E00CFFDD3 /* LXMethod.h */,
+				517E578F22FBCD8E00CFFDD3 /* LXMethod.m */,
+				517E576B22FBCA5E00CFFDD3 /* HTTPHelper.h */,
+				517E576322FBCA5E00CFFDD3 /* HTTPHelper.m */,
+				517E576D22FBCA5E00CFFDD3 /* BKQErrorCode.h */,
+				517E576422FBCA5E00CFFDD3 /* BKQError.h */,
+				517E577022FBCA5E00CFFDD3 /* BKQError.m */,
+				517E577522FBCA5E00CFFDD3 /* OpenUDID.h */,
+				517E576622FBCA5E00CFFDD3 /* OpenUDID.m */,
+				517E576722FBCA5E00CFFDD3 /* KeyChainHandler.h */,
+				517E577422FBCA5E00CFFDD3 /* KeyChainHandler.m */,
+				517E577122FBCA5E00CFFDD3 /* HTTPRequest+Des.h */,
+				517E576922FBCA5E00CFFDD3 /* HTTPRequest+Des.m */,
+				517E577222FBCA5E00CFFDD3 /* HTTPRequest.h */,
+				517E576A22FBCA5E00CFFDD3 /* HTTPRequest.m */,
+			);
+			path = HTTPRequest;
+			sourceTree = "<group>";
+		};
+		517E578022FBCABE00CFFDD3 /* 3DESiOS */ = {
+			isa = PBXGroup;
+			children = (
+				517E578122FBCABE00CFFDD3 /* NSString+NSReplace.h */,
+				517E578222FBCABE00CFFDD3 /* NSData+Category.h */,
+				517E578322FBCABE00CFFDD3 /* DES3Util.h */,
+				517E578422FBCABE00CFFDD3 /* GTMBase64.h */,
+				517E578522FBCABE00CFFDD3 /* NSData+Category.m */,
+				517E578622FBCABE00CFFDD3 /* NSString+NSReplace.m */,
+				517E578722FBCABE00CFFDD3 /* GTMDefines.h */,
+				517E578822FBCABE00CFFDD3 /* GTMBase64.m */,
+				517E578922FBCABE00CFFDD3 /* DES3Util.m */,
+			);
+			path = 3DESiOS;
+			sourceTree = "<group>";
+		};
 		51829F8E229068AA00F80D9A /* CoinMarket */ = {
 			isa = PBXGroup;
 			children = (
-				BB9CBC2E2296BE7700251B7C /* Node */,
 				BB9CBB2C2292C71100251B7C /* Data */,
+				BB9CBC2E2296BE7700251B7C /* Node */,
 				BB9CBB2B2292C6ED00251B7C /* Cell */,
 				BB09FC8F228E8CC600E3B37B /* ViewController_BaseVC.h */,
 				BB09FC90228E8CC600E3B37B /* ViewController_BaseVC.m */,
@@ -142,8 +220,10 @@
 		BB09FC8B228E8CC600E3B37B /* AgileTable */ = {
 			isa = PBXGroup;
 			children = (
+				517E578022FBCABE00CFFDD3 /* 3DESiOS */,
 				BB9CBC412297CC8600251B7C /* Config.h */,
 				BB9CBC3F2297CC7300251B7C /* Config.m */,
+				517E576022FBCA5E00CFFDD3 /* HTTPRequest */,
 				BB9CBC272296BB4C00251B7C /* YYFPSLabel */,
 				BB09FCA2228E8D1D00E3B37B /* BaseVC */,
 				51829F8E229068AA00F80D9A /* CoinMarket */,
@@ -353,20 +433,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517E577F22FBCA5E00CFFDD3 /* KeyChainHandler.m in Sources */,
 				BB09FCAA228E8E8200E3B37B /* BaseTableViewCell.m in Sources */,
+				517E577A22FBCA5E00CFFDD3 /* HTTPRequest.m in Sources */,
 				BB09FCAD228E928700E3B37B /* BaseViewController.m in Sources */,
+				517E577D22FBCA5E00CFFDD3 /* BKQError.m in Sources */,
 				BB9CBC482297F68200251B7C /* MYTabBarViewController.m in Sources */,
+				517E578C22FBCABE00CFFDD3 /* GTMBase64.m in Sources */,
 				BB9CBC342296C0D800251B7C /* CoinCellNode.m in Sources */,
 				BB09FC91228E8CC600E3B37B /* ViewController_BaseVC.m in Sources */,
 				5144BBB1229ADEA600814F52 /* CoinDetailViewController.m in Sources */,
+				517E577722FBCA5E00CFFDD3 /* HTTPHelper.m in Sources */,
 				BB09FC9C228E8CC800E3B37B /* main.m in Sources */,
 				BB9CBC402297CC7300251B7C /* Config.m in Sources */,
 				BB09FCB1228E93FD00E3B37B /* CellDataModel.m in Sources */,
+				517E579322FBCEF100CFFDD3 /* UDID.m in Sources */,
+				517E578D22FBCABE00CFFDD3 /* DES3Util.m in Sources */,
 				BB09FCB5228EBF7E00E3B37B /* CoinCell.m in Sources */,
+				517E578A22FBCABE00CFFDD3 /* NSData+Category.m in Sources */,
 				BB9CBB2F2292C7A100251B7C /* CurrencyData.m in Sources */,
 				BB9CBC262296BA6900251B7C /* ViewController_Texture.m in Sources */,
+				517E578B22FBCABE00CFFDD3 /* NSString+NSReplace.m in Sources */,
+				517E577822FBCA5E00CFFDD3 /* OpenUDID.m in Sources */,
 				BB9CBC2C2296BB4C00251B7C /* YYWeakProxy.m in Sources */,
+				517E577922FBCA5E00CFFDD3 /* HTTPRequest+Des.m in Sources */,
 				BB9CBC2D2296BB4C00251B7C /* YYFPSLabel.m in Sources */,
+				517E579022FBCD8E00CFFDD3 /* LXMethod.m in Sources */,
 				BB9CBC3B2297C83E00251B7C /* UITableView+Refresh.m in Sources */,
 				BB9CBC3E2297C8A100251B7C /* NSObject+KVOBlock.m in Sources */,
 				BB09FCA6228E8D7400E3B37B /* BaseSelectCell.m in Sources */,
@@ -515,7 +607,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 27EUXE9QPG;
+				DEVELOPMENT_TEAM = 6TS559DR96;
 				GCC_PREFIX_HEADER = "AgileTable/BBQ-prefix.pch";
 				INFOPLIST_FILE = AgileTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,7 +626,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 27EUXE9QPG;
+				DEVELOPMENT_TEAM = 6TS559DR96;
 				GCC_PREFIX_HEADER = "AgileTable/BBQ-prefix.pch";
 				INFOPLIST_FILE = AgileTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

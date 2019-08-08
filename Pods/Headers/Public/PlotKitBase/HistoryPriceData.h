@@ -1,0 +1,1 @@
+../../../PlotKitBase/PlotKitBase/Classes/PlotKit/HistoryTrendView/HistoryPriceData.h

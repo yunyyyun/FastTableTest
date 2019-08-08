@@ -8,6 +8,7 @@
 
 #import "BaseTableViewCell.h"
 #import "CurrencyData.h"
+#define cellDefaultHeight 266
 
 NS_ASSUME_NONNULL_BEGIN
 

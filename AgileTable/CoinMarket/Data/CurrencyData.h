@@ -24,6 +24,9 @@
 @property (nonatomic) NSNumber<Optional> *percentChange24h;
 @property (nonatomic) NSNumber<Optional> *lastChange;  // 判断刷新的涨跌
 @property (nonatomic) NSNumber<Optional> *isAnimated;
+@property (nonatomic) NSNumber<Optional> *height;
+@property (nonatomic) NSNumber<Optional> *pageNum; // 0:mid -1:left
+@property (strong, nonatomic) NSArray<Optional> *trendDatas;
 - (void)animation:(NSTimeInterval)duration;
 
 @end

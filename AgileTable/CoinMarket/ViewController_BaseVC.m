@@ -85,8 +85,11 @@
     NSMutableArray<CellDataModel *> *section1 = [NSMutableArray array];
     [cellArray addObject:section1];
     [self.listData.list enumerateObjectsUsingBlock:^(CurrencyData *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj.height intValue]<10)
+            obj.height = @cellDefaultHeight;
         CellDataModel *coinCelldata = [[CellDataModel alloc] initWithCellClassName:@"CoinCell" data: obj];
-        coinCelldata.bottomLineRight = 0;
+        coinCelldata.bottomLineRight = @-1;
+        coinCelldata.bottomLineLeft = @-1;
         [section1 addObject:coinCelldata];
     }];
     

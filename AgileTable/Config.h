@@ -36,5 +36,6 @@ _Pragma("clang diagnostic ignored \"-Wshadow\"") \
 try{} @finally{} __typeof__(x) x = __weak_##x##__; \
 _Pragma("clang diagnostic pop")
 
+#define EDLog NSLog
 
 #endif /* Config_h */
